@@ -8,8 +8,6 @@ import lamboVideo2Mp4 from "@appVideos/instavideo.mp4";
 import lamboVideo2Webm from "@appVideos/instavideo.webm";
 import lamboVideo3Mp4 from "@appVideos/videoplayback.mp4";
 import lamboVideo3Webm from "@appVideos/lambo-video-3.webm";
-import lamboVideo4Mp4 from "@appVideos/lambo-video-4.mp4";
-import lamboVideo4Webm from "@appVideos/lambo-video-4.webm";
 
 export const useVideoSources = () => {
   let [videoSources, setVideoSources] = useState(() => {
