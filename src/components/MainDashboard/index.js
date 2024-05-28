@@ -14,8 +14,7 @@ import ApplynEarn from "./ApplynEarn/index.js";
 import Statistics from "./Statistics/index.js";
 import { JumbotronSection } from "../../pages/home/components/jumbotron-section.jsx";
 
-function MainDashboard({ currentColor }) {
-  const [isVisible, setIsVisible] = useState(false);
+function MainDashboard({ openModal, setOpenModal = () => {}, currentColor }) {
   // const styles = useSpring({
   //   opacity: 1,
   //   translateX: 0,
@@ -51,7 +50,10 @@ function MainDashboard({ currentColor }) {
           <div style={styles}>
             <HorizontalScroller />
             <Parallax speed={60} translateX={(-20, 0)}>
-              <FeatureSection currentColor={currentColor} />
+              <FeatureSection
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+              />
             </Parallax>
             <Parallax speed={60} translateX={(10, 10)}>
               <ApplynEarn />

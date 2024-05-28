@@ -5,12 +5,11 @@ import Feature from "../commons/animations/feature.json";
 import ShoppingMart from "../commons/animations/shoppingmart.json";
 import { Button } from "../commons/button.tsx";
 import Typewriter from "typewriter-effect";
+import Modal from "../commons/modal/index.js";
 import BgVideo from "../../../pages/assets/backvideo5.mp4";
 import "./style.css";
 
-function FeatureSection({ currentColor }) {
-  const [openModal, setOpenModal] = useState(false);
-  console.log(openModal);
+function FeatureSection({ openModal, setOpenModal = () => {}, currentColor }) {
   return (
     <>
       <div>

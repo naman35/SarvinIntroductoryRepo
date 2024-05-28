@@ -45,14 +45,14 @@ function IntroductoryPage() {
           <img
             src="https://see.fontimg.com/api/renderfont4/MVyEB/eyJyIjoiZnMiLCJoIjo1NCwidyI6MjAwMCwiZnMiOjI3LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/IkJlIHRoZSBGaXJzdCB0byBFeHBlcmllbmNlIE91ciBFeGNpdGluZyBQcm9kdWN0Ig/breadley-sans-regular.png"
             width={500}
-            height={600}
+            height={500}
             unoptimized
             style={{ marginLeft: "10rem", marginBottom: "2rem" }}
           />
           <img
             src="https://see.fontimg.com/api/renderfont4/MVyEB/eyJyIjoiZnMiLCJoIjo5NiwidyI6MjAwMCwiZnMiOjQ4LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/TGF1bmNoaW5nIE5leHQgTW9udGgh/breadley-sans-regular.png"
             width={500}
-            height={600}
+            height={500}
             unoptimized
             style={{ marginLeft: "10rem", marginBottom: "2rem" }}
           />
