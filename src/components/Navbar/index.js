@@ -5,6 +5,9 @@ import { Button } from "./button.tsx";
 
 function NavBar({ currentColor }) {
   const [openPricingModal, setOpenPricingModal] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
+  console.log(openModal);
+
   return (
     <div className={styles.html}>
       <div className={styles.Layout_app__Yxg9h}>
@@ -651,8 +654,9 @@ function NavBar({ currentColor }) {
                 </li>
                 {/* Other Feature Links... */}
               </ul>
+
               <div className={styles.Header_loginWrapper__9_1kE}>
-                <a
+                {/* <a
                   className={styles.Header_client__RyL2j}
                   href="/sign-in"
                   target=""
@@ -683,9 +687,9 @@ function NavBar({ currentColor }) {
                     </defs>
                   </svg>
                   SignIn
-                </a>
+                </a> */}
 
-                <div className={styles.Header_background__0TypS}></div>
+                {/* <div className={styles.Header_background__0TypS}></div> */}
               </div>
               <Button
                 style={{
@@ -697,6 +701,7 @@ function NavBar({ currentColor }) {
                   lineHeight: "24px",
                   transition: "background-color 2s",
                 }}
+                onClick={() => setOpenModal(!openModal)}
               >
                 <svg
                   width="24"
@@ -719,7 +724,7 @@ function NavBar({ currentColor }) {
                     </clipPath>
                   </defs>
                 </svg>
-                Get Demo
+                Request an Invite
               </Button>
             </div>
           </div>

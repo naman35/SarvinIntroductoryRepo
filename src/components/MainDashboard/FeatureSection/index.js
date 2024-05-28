@@ -9,6 +9,8 @@ import BgVideo from "../../../pages/assets/backvideo5.mp4";
 import "./style.css";
 
 function FeatureSection({ currentColor }) {
+  const [openModal, setOpenModal] = useState(false);
+  console.log(openModal);
   return (
     <>
       <div>
@@ -74,11 +76,13 @@ function FeatureSection({ currentColor }) {
                 marginTop: "30px",
                 fontSize: 16,
                 fontWeight: 600,
-                backgroundColor: currentColor,
+                backgroundColor: "#1f4067",
+                color: "#fff",
                 transition: "background-color 2s",
               }}
+              onClick={() => setOpenModal(!openModal)}
             >
-              Get Started
+              Request an Invite
             </Button>
           </div>
           <div style={{ width: "50%" }}>
@@ -137,11 +141,13 @@ function FeatureSection({ currentColor }) {
                 marginTop: "30px",
                 fontSize: 16,
                 fontWeight: 600,
-                background: currentColor,
+                backgroundColor: "#1f4067",
+                color: "#fff",
                 transition: "background-color 2s",
               }}
+              onClick={() => setOpenModal(!openModal)}
             >
-              Get Started
+              Request an Invite
             </Button>
           </div>
         </div>

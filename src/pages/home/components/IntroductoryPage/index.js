@@ -3,10 +3,7 @@
 import React from "react";
 import Lottie from "react-lottie-player";
 import MidContent from "../../../../components/MainDashboard/commons/animations/influencer.json";
-import Typewriter from "typewriter-effect";
-
 import styles from "./styles.module.css";
-// import { useSpring, animated } from 'react-spring';
 
 function IntroductoryPage() {
   return (
@@ -43,8 +40,55 @@ function IntroductoryPage() {
             width={500}
             height={500}
             unoptimized
-            style={{ marginLeft: "10rem" }}
+            style={{ marginLeft: "10rem", marginBottom: "2rem" }}
           />
+          <img
+            src="https://see.fontimg.com/api/renderfont4/MVyEB/eyJyIjoiZnMiLCJoIjo1NCwidyI6MjAwMCwiZnMiOjI3LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/IkJlIHRoZSBGaXJzdCB0byBFeHBlcmllbmNlIE91ciBFeGNpdGluZyBQcm9kdWN0Ig/breadley-sans-regular.png"
+            width={500}
+            height={600}
+            unoptimized
+            style={{ marginLeft: "10rem", marginBottom: "2rem" }}
+          />
+          <img
+            src="https://see.fontimg.com/api/renderfont4/MVyEB/eyJyIjoiZnMiLCJoIjo5NiwidyI6MjAwMCwiZnMiOjQ4LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/TGF1bmNoaW5nIE5leHQgTW9udGgh/breadley-sans-regular.png"
+            width={500}
+            height={600}
+            unoptimized
+            style={{ marginLeft: "10rem", marginBottom: "2rem" }}
+          />
+          {/* <div class="flex gap-2">
+            <div class="relative mb-6">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 16"
+                >
+                  <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                  <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="input-group-1"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 ps-10 p-2.5  dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="xyz@gmail.com"
+              />
+            </div>
+            <button
+              type="button"
+              class=" py-1 px-4 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            >
+              <div class="flex align-middle gap-2">
+                <div class="flex align-middle">Request an Invite</div>{" "}
+                <div class="flex align-middle mt-1">
+                  <FaGg />
+                </div>
+              </div>
+            </button>
+          </div> */}
           {/* <Typewriter
             options={{
               strings: [
