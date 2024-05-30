@@ -70,19 +70,21 @@ function FeatureSection({ openModal, setOpenModal = () => {}, currentColor }) {
               printing and typesetting industry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s
             </div>
-            <Button
-              style={{
-                marginTop: "30px",
-                fontSize: 16,
-                fontWeight: 600,
-                backgroundColor: "#1f4067",
-                color: "#fff",
-                transition: "background-color 2s",
-              }}
-              onClick={() => setOpenModal(!openModal)}
-            >
-              Request an Invite
-            </Button>
+            <div>
+              <Button
+                style={{
+                  marginTop: "30px",
+                  fontSize: 16,
+                  fontWeight: 600,
+                  backgroundColor: "#1f4067",
+                  color: "#fff",
+                  transition: "background-color 2s",
+                }}
+                onClick={() => setOpenModal(!openModal)}
+              >
+                Request an Invite
+              </Button>
+            </div>
           </div>
           <div style={{ width: "50%" }}>
             {" "}
@@ -90,7 +92,7 @@ function FeatureSection({ openModal, setOpenModal = () => {}, currentColor }) {
               loop
               animationData={Feature}
               play
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: "90%", height: "100%", marginBottom: "3rem" }}
             />
           </div>
         </div>
@@ -108,10 +110,14 @@ function FeatureSection({ openModal, setOpenModal = () => {}, currentColor }) {
               loop
               animationData={ShoppingMart}
               play
-              style={{ width: "110%", height: "190%", marginTop: "-310px" }}
+              style={{
+                width: "120%",
+                height: "120%",
+                marginTop: "-13rem",
+              }}
             />
           </div>
-          <div style={{ width: "50%", marginLeft: "40px" }}>
+          <div style={{ width: "50%", marginLeft: "40px", marginTop: "2rem" }}>
             <div
               style={{
                 color: "#2D2D2D",

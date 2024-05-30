@@ -13,6 +13,7 @@ import SlideCards from "./SlideCards/index.js";
 import ApplynEarn from "./ApplynEarn/index.js";
 import Statistics from "./Statistics/index.js";
 import { JumbotronSection } from "../../pages/home/components/jumbotron-section.jsx";
+import MediaQuery from "react-responsive";
 
 function MainDashboard({ openModal, setOpenModal = () => {}, currentColor }) {
   // const styles = useSpring({
@@ -48,7 +49,9 @@ function MainDashboard({ openModal, setOpenModal = () => {}, currentColor }) {
       <div style={{ opacity: 1, zIndex: 100000000000000000 }}>
         <ParallaxProvider>
           <div style={styles}>
-            <HorizontalScroller />
+            <MediaQuery query="(min-width: 1024px)">
+              <HorizontalScroller />
+            </MediaQuery>
             <Parallax speed={60} translateX={(-20, 0)}>
               <FeatureSection
                 openModal={openModal}

@@ -4,8 +4,9 @@ import React from "react";
 import Lottie from "react-lottie-player";
 import MidContent from "../../../../components/MainDashboard/commons/animations/influencer.json";
 import styles from "./styles.module.css";
+import Button from "../../../../components/MainDashboard/commons/3dCarousel/Button";
 
-function IntroductoryPage() {
+function IntroductoryPage({ openModal, setOpenModal = () => {} }) {
   return (
     <>
       <div
@@ -56,6 +57,7 @@ function IntroductoryPage() {
             unoptimized
             style={{ marginLeft: "10rem", marginBottom: "2rem" }}
           />
+
           {/* <div class="flex gap-2">
             <div class="relative mb-6">
               <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">

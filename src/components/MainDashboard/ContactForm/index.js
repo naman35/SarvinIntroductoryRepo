@@ -23,13 +23,13 @@ function ContactForm() {
             <div style={{ display: "flex", marginTop: 60 }}>
               <img src={Phonecall} alt="Phone Call" width={20} />
               <div style={{ fontSize: 16, fontWeight: 400, margin: 10 }}>
-                +012 345 6789
+                +919690347218
               </div>
             </div>
             <div style={{ display: "flex", marginTop: 10 }}>
               <img src={EnvelopeIcon} alt="Envelope" width={20} />
               <div style={{ fontSize: 16, fontWeight: 400, margin: 10 }}>
-                Hello@animaapp.com
+                sarvin.creators@gmail.com
               </div>
             </div>
             <div style={{ marginTop: 20 }}>
