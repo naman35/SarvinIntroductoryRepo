@@ -1,14 +1,45 @@
 /* node modules import */
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import axios from "axios";
 
 /* app imports */
 import "@components/common/css/common.scss";
 import AppNav from "@components/Navbar/index.js";
 import { HomePage } from "@pages/home/index.js";
 import Modal from "./components/MainDashboard/commons/modal";
+import MapIntegration from "./components/MainDashboard/commons/MapIntegration";
+
+const API_ENDPOINT = "https://api.geoapify.com/v1/geocode/reverse?";
+
+const API_KEY = "apiKey=1b2a1437b0d24b1db3eef34e3768d5fd";
 
 export default function App() {
   const [openModal, setOpenModal] = useState(true);
+  const [latitude, setLatitude] = useState();
+  const [longitude, setLongitude] = useState();
+  const [responseText, setResponseText] = useState({});
+  const [city, setCity] = useState("");
+  const isFirstRender = useRef(true); // Create a ref to track initial render
+  useEffect(() => {
+    if (!isFirstRender.current) {
+      console.log("naman");
+      axios
+        .get(`${API_ENDPOINT}lat=${latitude}&lon=${longitude}&${API_KEY}`)
+        .then((response) => {
+          setResponseText(JSON.parse(response?.request?.responseText));
+        });
+    } else {
+      // Set the flag to false after the first render
+      isFirstRender.current = false;
+    }
+  }, [latitude, longitude]);
+
+  const getLocation = async () => {
+    navigator.geolocation.getCurrentPosition((position) => {
+      setLatitude(position?.coords?.latitude);
+      setLongitude(position?.coords?.longitude);
+    });
+  };
 
   return (
     <React.Fragment>
@@ -109,6 +140,25 @@ export default function App() {
                         class="block w-full rounded-md border-0 py-1.5 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       />
                     </div>
+                    <label
+                      for="email"
+                      class="block text-sm font-medium leading-6 mt-4 gap-2 text-gray-900 "
+                    >
+                      Your Location
+                      <div class="font-thin">
+                        (Discover the Top Brands and Influencers in Your City! )
+                      </div>
+                    </label>
+                    <div class="mt-2">
+                      <button
+                        type="button"
+                        class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-600 focus:outline-none bg-gray-100 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-[#F27430] focus:z-10 focus:ring-4 focus:ring-gray-100 "
+                        onClick={() => getLocation()}
+                      >
+                        Click Me For Getting Your Location
+                      </button>
+                    </div>
+                    {responseText?.features?.[0]?.properties?.formatted}
                   </div>
 
                   <div>

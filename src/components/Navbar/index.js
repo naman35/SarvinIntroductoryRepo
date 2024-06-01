@@ -5,7 +5,6 @@ import { Button } from "../MainDashboard/commons/button.tsx";
 
 function NavBar({ openModal, setOpenModal = () => {}, currentColor }) {
   const [openPricingModal, setOpenPricingModal] = useState(false);
-  console.log(openModal, "kk");
 
   return (
     <div className={styles.html}>
