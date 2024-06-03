@@ -162,9 +162,9 @@ function Testimonials() {
           display: "flex",
           justifyContent: "center",
           textAlign: "center",
-          color: "#DC4653",
+          color: "#be4b47",
           fontSize: "38px",
-          fontWeight: 700,
+          fontWeight: 500,
           marginTop: "120px",
           marginBottom: "20px",
           alignSelf: "stretch",
@@ -177,12 +177,12 @@ function Testimonials() {
           color: "#2D2D2D",
           textAlign: "center",
           fontSize: "16px",
-          fontWeight: 400,
+          fontWeight: 300,
           lineHeight: "100%",
           alignSelf: "stretch",
         }}
       >
-        See how our landing page ui kit is making an impact.
+        See How Our Sarvin Creating An Impact.
       </div>
       <div
         style={{

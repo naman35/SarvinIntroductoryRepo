@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import "./Modale.css";
 
 const Modal = ({
@@ -9,13 +9,6 @@ const Modal = ({
   animation = "one",
   closeOutside = false,
 }) => {
-  const [modalClass, setModalClass] = useState("");
-
-  const handleButtonClick = (buttonId) => {
-    setModalClass(buttonId);
-    setOpenModal(true);
-  };
-
   const closeModal = () => {
     setOpenModal(!openModal);
   };

@@ -11,7 +11,7 @@ export default function CreaterCard({
       style={{ overflow: "hidden" }}
     >
       <a
-        href="#"
+        href="/"
         className="relative block  group-hover:opacity-70 transition-opacity duration-300"
       >
         <div className="relative overflow-hidden">

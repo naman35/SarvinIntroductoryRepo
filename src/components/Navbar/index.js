@@ -1,9 +1,8 @@
-"use client";
 import React, { useState } from "react";
 import styles from "./styles.module.css";
 import { Button } from "../MainDashboard/commons/button.tsx";
 
-function NavBar({ openModal, setOpenModal = () => {}, currentColor }) {
+function NavBar({ openModal, setOpenModal = () => {} }) {
   const [openPricingModal, setOpenPricingModal] = useState(false);
 
   return (
@@ -18,6 +17,7 @@ function NavBar({ openModal, setOpenModal = () => {}, currentColor }) {
                   width={400}
                   height={400}
                   style={{ marginLeft: "1rem" }}
+                  alt="Dashboard"
                 />
 
                 {/* Your logo */}
@@ -465,7 +465,7 @@ function NavBar({ openModal, setOpenModal = () => {}, currentColor }) {
                           </a>
                         </li>
                         <li>
-                          <a className={styles.LinkItem_link__MszSS}>
+                          <a href="/" className={styles.LinkItem_link__MszSS}>
                             <div
                               className={styles.LinkItem_hoverContainer__wX9bI}
                               onClick={() => {

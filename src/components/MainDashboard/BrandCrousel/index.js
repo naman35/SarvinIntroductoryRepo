@@ -187,9 +187,9 @@ function BrandCrousel() {
           display: "flex",
           justifyContent: "center",
           textAlign: "center",
-          color: "#DC4653",
+          color: "#be4b47",
           fontSize: "38px",
-          fontWeight: 700,
+          fontWeight: 400,
           marginTop: "120px",
         }}
       >
@@ -211,9 +211,9 @@ function BrandCrousel() {
           display: "flex",
           justifyContent: "center",
           textAlign: "center",
-          color: "#DC4653",
+          color: "#be4b47",
           fontSize: "38px",
-          fontWeight: 700,
+          fontWeight: 400,
           marginTop: "80px",
         }}
       >

@@ -10,9 +10,9 @@ function SlideCards() {
         style={{
           display: "flex",
           justifyContent: "center",
-          color: "#DC4653",
+          color: "#be4b47",
           fontSize: "48px",
-          fontWeight: 700,
+          fontWeight: 400,
           margin: "60px 0 30px 0",
         }}
       >

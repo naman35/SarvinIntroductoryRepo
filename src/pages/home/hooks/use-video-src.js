@@ -1,7 +1,8 @@
 /* app imports */
-import React, { useState } from "react";
+import { useState } from "react";
 
 /* video imports */
+
 import lamboVideo1Mp4 from "@appVideos/Digitalmarketting.mp4";
 import lamboVideo1Webm from "@appVideos/Digitalmarketting.webm";
 import lamboVideo2Mp4 from "@appVideos/instavideo.mp4";

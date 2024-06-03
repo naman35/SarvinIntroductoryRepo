@@ -1,5 +1,5 @@
 /* node module imports */
-import React, { useState, useEffect, useRef } from "react";
+import React, { useRef } from "react";
 
 /* app imports */
 import { useVideoSources } from "../hooks/use-video-src.js";

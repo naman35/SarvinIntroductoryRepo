@@ -1,5 +1,4 @@
-"use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import SlideCardsInfluencer from "./SlideCardsInfluencer/index.js";
 import BrandCrousel from "./BrandCrousel";
 import FeatureSection from "./FeatureSection";
@@ -16,18 +15,6 @@ import { JumbotronSection } from "../../pages/home/components/jumbotron-section.
 import MediaQuery from "react-responsive";
 
 function MainDashboard({ openModal, setOpenModal = () => {}, currentColor }) {
-  // const styles = useSpring({
-  //   opacity: 1,
-  //   translateX: 0,
-  //   from: { opacity: 0, translateX: -100 },
-  //   config: { duration: 2000 },
-  // });
-  // let scr = window.scrollY;
-  // console.log(scr);
-  // if (scr > 2500) {
-  //   setIsVisible(true);
-  // }
-
   return (
     <div>
       <div
@@ -43,6 +30,7 @@ function MainDashboard({ openModal, setOpenModal = () => {}, currentColor }) {
             src="https://digitalscholar.in/wp-content/uploads/2022/09/micro-influencers-india-body-image.png"
             unoptimized
             className={styles.image}
+            alt="Main Dashboard"
           />
         </div>
       </div>
@@ -82,11 +70,11 @@ function MainDashboard({ openModal, setOpenModal = () => {}, currentColor }) {
               <Statistics />
             </Parallax>
             <Parallax speed={10} translateY={(10, 22)}>
-              {" "}
-              <AboutOurTeam currentColor={currentColor} />
+              <JumbotronSection />
             </Parallax>
             <Parallax speed={10} translateY={(10, 22)}>
-              <JumbotronSection />
+              {" "}
+              <AboutOurTeam currentColor={currentColor} />
             </Parallax>
             <br />
           </div>

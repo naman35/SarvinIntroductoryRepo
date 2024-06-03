@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-"use client";
 
 import React, { useState } from "react";
 import {
@@ -21,7 +20,6 @@ const center = {
 };
 
 const MapIntegration = () => {
-  const [map, setMap] = useState(null);
   const [mapRef, setMapRef] = useState();
   const [isOpen, setIsOpen] = useState(false);
   const [infoWindowData, setInfoWindowData] = useState();
@@ -88,9 +86,7 @@ const MapIntegration = () => {
     markers?.forEach(({ lat, lng }) => bounds.extend({ lat, lng }));
     map.fitBounds(bounds);
   };
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null);
-  }, []);
+  const onUnmount = React.useCallback(function callback(map) {}, []);
   if (loadError) {
     return <div>Error loading maps</div>;
   }

@@ -1,11 +1,9 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import Lottie from "react-lottie-player";
 import Feature from "../commons/animations/feature.json";
 import ShoppingMart from "../commons/animations/shoppingmart.json";
 import { Button } from "../commons/button.tsx";
 import Typewriter from "typewriter-effect";
-import Modal from "../commons/modal/index.js";
 import BgVideo from "../../../pages/assets/backvideo5.mp4";
 import "./style.css";
 
@@ -21,18 +19,17 @@ function FeatureSection({ openModal, setOpenModal = () => {}, currentColor }) {
         style={{
           display: "flex",
           justifyContent: "center",
-          color: currentColor,
           fontSize: "48px",
-          fontWeight: 700,
+          fontWeight: 400,
           marginTop: "40px",
           marginBottom: "80px",
           transition: "color 2s",
-          color: "#DC4653",
+          color: "#E65C55",
         }}
       >
         <Typewriter
           options={{
-            strings: ["One Stop Solution for Creators and Brands need"],
+            strings: ["One Stop Solution for Creators and Brands"],
             autoStart: true,
             loop: true,
           }}
@@ -50,8 +47,8 @@ function FeatureSection({ openModal, setOpenModal = () => {}, currentColor }) {
             <div
               style={{
                 color: "#2D2D2D",
-                fontSize: "36px",
-                fontWeight: 700,
+                fontSize: 36,
+                fontWeight: 500,
                 marginBottom: "20px",
               }}
             >
@@ -60,8 +57,8 @@ function FeatureSection({ openModal, setOpenModal = () => {}, currentColor }) {
             <div
               style={{
                 color: "#2D2D2D",
-                fontSize: "20px",
-                fontWeight: 400,
+                fontSize: 21,
+                fontWeight: 300,
               }}
             >
               Lorem IpBum is simply dummy text of the printing and typesetting
@@ -75,7 +72,7 @@ function FeatureSection({ openModal, setOpenModal = () => {}, currentColor }) {
                 style={{
                   marginTop: "30px",
                   fontSize: 16,
-                  fontWeight: 600,
+                  fontWeight: 500,
                   backgroundColor: "#1f4067",
                   color: "#fff",
                   transition: "background-color 2s",
@@ -122,7 +119,7 @@ function FeatureSection({ openModal, setOpenModal = () => {}, currentColor }) {
               style={{
                 color: "#2D2D2D",
                 fontSize: "36px",
-                fontWeight: 700,
+                fontWeight: 400,
                 marginBottom: "20px",
               }}
             >
@@ -131,8 +128,8 @@ function FeatureSection({ openModal, setOpenModal = () => {}, currentColor }) {
             <div
               style={{
                 color: "#2D2D2D",
-                fontSize: "20px",
-                fontWeight: 400,
+                fontSize: 22,
+                fontWeight: 300,
               }}
             >
               Lorem IpBum is simply dummy text of the printing and typesetting
