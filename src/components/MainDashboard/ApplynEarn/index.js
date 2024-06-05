@@ -138,10 +138,9 @@ function ApplynEarn() {
                 textAlign: "center",
                 color: "#DC4653",
                 fontSize: "38px",
-                fontWeight: 500,
+                fontWeight: 300,
                 marginTop: "10px",
                 marginBottom: "20px",
-                fontFamily: "Poetsen One",
                 fontStyle: "normal",
               }}
             >
