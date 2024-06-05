@@ -70,7 +70,7 @@ function IntroductoryPage({ openModal, setOpenModal = () => {} }) {
           position: "relative",
           display: "flex",
           opacity: 0.1,
-          zIndex: 100,
+          zIndex: 10,
         }}
       >
         <div
