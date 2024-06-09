@@ -5,8 +5,11 @@ import axios from "axios";
 /* app imports */
 import "@components/common/css/common.scss";
 import AppNav from "@components/Navbar/index.js";
+import AppNavMobileView from "@components/Navbar/NavbarMobileView";
 import { HomePage } from "@pages/home/index.js";
 import Modal from "./components/MainDashboard/commons/modal";
+import { useMediaQuery } from "react-responsive";
+
 // import MapIntegration from "./components/MainDashboard/commons/MapIntegration";
 
 const API_ENDPOINT = "https://api.geoapify.com/v1/geocode/reverse?";
@@ -69,6 +72,13 @@ export default function App() {
       console.log(error.response.data.message);
     }
   };
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
+  const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
 
   return (
     <div class="bg-[#f8f7fe]">
@@ -346,7 +356,13 @@ export default function App() {
           )}
         </>
       </Modal>
-      <AppNav openModal={openModal} setOpenModal={setOpenModal} />
+      {isTabletOrMobile && (
+        <AppNavMobileView openModal={openModal} setOpenModal={setOpenModal} />
+      )}
+
+      {isDesktopOrLaptop && (
+        <AppNav openModal={openModal} setOpenModal={setOpenModal} />
+      )}
 
       <HomePage openModal={openModal} setOpenModal={setOpenModal} />
 
