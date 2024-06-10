@@ -40,12 +40,7 @@ function MainDashboard({ openModal, setOpenModal = () => {}, currentColor }) {
             <MediaQuery query="(min-width: 1024px)">
               <HorizontalScroller />
             </MediaQuery>
-            <Parallax speed={60} translateX={(-20, 0)}>
-              <FeatureSection
-                openModal={openModal}
-                setOpenModal={setOpenModal}
-              />
-            </Parallax>
+            <FeatureSection openModal={openModal} setOpenModal={setOpenModal} />
             <Parallax speed={60} translateX={(10, 10)}>
               <ApplynEarn />
             </Parallax>

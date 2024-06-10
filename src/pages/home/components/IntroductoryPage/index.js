@@ -4,17 +4,22 @@ import Lottie from "react-lottie-player";
 import MidContent from "../../../../components/MainDashboard/commons/animations/influencer.json";
 import styles from "./styles.module.css";
 
-function IntroductoryPage({ openModal, setOpenModal = () => {} }) {
+function IntroductoryPage({
+  isTabletOrMobile = false,
+  openModal,
+  setOpenModal = () => {},
+}) {
   return (
     <>
       <div
         style={{
           display: "flex",
-          justifyContent: "space-between",
+          flexDirection: isTabletOrMobile ? "column-reverse" : "row",
+          justifyContent: isTabletOrMobile ? "space-evenly" : "space-between",
           alignItems: "center",
           position: "absolute",
-          width: "100%",
-          height: "100%",
+          width: "100vw",
+          height: "100vh",
           opacity: 1,
         }}
       >
@@ -28,32 +33,44 @@ function IntroductoryPage({ openModal, setOpenModal = () => {} }) {
         >
           <img
             src="https://see.fontimg.com/api/renderfont4/0WPqo/eyJyIjoiZnMiLCJoIjoxMzAsInciOjIwMDAsImZzIjo2NSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/U0FSVklO/gracility-regular.png"
-            width={400}
-            height={400}
+            width={isTabletOrMobile ? 200 : 400}
+            height={isTabletOrMobile ? 200 : 400}
             unoptimized
-            style={{ marginLeft: "10rem", marginBottom: "2rem" }}
+            style={{
+              marginLeft: isTabletOrMobile ? "0rem" : "10rem",
+              marginBottom: "2rem",
+            }}
           />
 
           <img
             src="https://see.fontimg.com/api/renderfont4/z8xjG/eyJyIjoiZnMiLCJoIjoxMzAsInciOjIwMDAsImZzIjo2NSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/QSBuZXcgSm91cm5leSBBd2FpdHMgeW91/darlington-demo.png"
-            width={500}
-            height={500}
+            width={isTabletOrMobile ? 300 : 500}
+            height={isTabletOrMobile ? 300 : 500}
             unoptimized
-            style={{ marginLeft: "10rem", marginBottom: "2rem" }}
+            style={{
+              marginLeft: isTabletOrMobile ? "0rem" : "10rem",
+              marginBottom: "2rem",
+            }}
           />
           <img
             src="https://see.fontimg.com/api/renderfont4/MVyEB/eyJyIjoiZnMiLCJoIjo1NCwidyI6MjAwMCwiZnMiOjI3LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/IkJlIHRoZSBGaXJzdCB0byBFeHBlcmllbmNlIE91ciBFeGNpdGluZyBQcm9kdWN0Ig/breadley-sans-regular.png"
-            width={500}
-            height={500}
+            width={isTabletOrMobile ? 300 : 500}
+            height={isTabletOrMobile ? 300 : 500}
             unoptimized
-            style={{ marginLeft: "10rem", marginBottom: "2rem" }}
+            style={{
+              marginLeft: isTabletOrMobile ? "0rem" : "10rem",
+              marginBottom: "2rem",
+            }}
           />
           <img
             src="https://see.fontimg.com/api/renderfont4/MVyEB/eyJyIjoiZnMiLCJoIjo5NiwidyI6MjAwMCwiZnMiOjQ4LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/TGF1bmNoaW5nIE5leHQgTW9udGgh/breadley-sans-regular.png"
-            width={500}
-            height={500}
+            width={isTabletOrMobile ? 300 : 500}
+            height={isTabletOrMobile ? 300 : 500}
             unoptimized
-            style={{ marginLeft: "10rem", marginBottom: "2rem" }}
+            style={{
+              marginLeft: isTabletOrMobile ? "0rem" : "10rem",
+              marginBottom: "2rem",
+            }}
           />
         </div>
         <div class="opacity-100 relative">
@@ -61,7 +78,12 @@ function IntroductoryPage({ openModal, setOpenModal = () => {} }) {
             loop
             animationData={MidContent}
             play
-            style={{ width: 700, height: 700, opacity: 1 }}
+            style={{
+              marginTop: isTabletOrMobile ? "1rem" : "-4rem",
+              width: isTabletOrMobile ? "100%" : 700,
+              height: isTabletOrMobile ? 450 : 700,
+              opacity: 1,
+            }}
           />
         </div>
       </div>

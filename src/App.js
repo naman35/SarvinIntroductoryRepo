@@ -364,7 +364,11 @@ export default function App() {
         <AppNav openModal={openModal} setOpenModal={setOpenModal} />
       )}
 
-      <HomePage openModal={openModal} setOpenModal={setOpenModal} />
+      <HomePage
+        isTabletOrMobile={isTabletOrMobile}
+        openModal={openModal}
+        setOpenModal={setOpenModal}
+      />
 
       <footer></footer>
     </div>

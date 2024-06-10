@@ -9,13 +9,21 @@ import MainDashboard from "../../components/MainDashboard/index.js";
 
 /* video imports */
 
-export const HomePage = ({ openModal, setOpenModal = () => {} }) => {
+export const HomePage = ({
+  openModal,
+  setOpenModal = () => {},
+  isTabletOrMobile = false,
+}) => {
   return (
     <>
-      <IntroductoryPage openModal={openModal} setOpenModal={setOpenModal} />
-      <MainDashboard openModal={openModal} setOpenModal={setOpenModal} />
+      <IntroductoryPage
+        isTabletOrMobile={isTabletOrMobile}
+        openModal={openModal}
+        setOpenModal={setOpenModal}
+      />
+      {/* <MainDashboard openModal={openModal} setOpenModal={setOpenModal} /> */}
 
-      <FooterSection />
+      {/* <FooterSection /> */}
     </>
   );
 };
