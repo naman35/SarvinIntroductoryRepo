@@ -19,7 +19,7 @@ import Macy from "../../../pages/assets/Macy.png";
 
 import "react-alice-carousel/lib/alice-carousel.css";
 
-function BrandCrousel() {
+function BrandCrousel({ isTabletOrMobile = false }) {
   const handleDragStart = (e) => e.preventDefault();
 
   const items = [
@@ -180,6 +180,205 @@ function BrandCrousel() {
       />
     </div>,
   ];
+  const mobile_items = [
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-around",
+        paddingTop: 80,
+        paddingBottom: 20,
+        paddingRight: 40,
+        paddingLeft: 0,
+      }}
+    >
+      <img
+        src={Airbnb}
+        onDragStart={handleDragStart}
+        role="presentation"
+        alt="fvf"
+        height={180}
+        width={180}
+      />
+      <img
+        src={Google}
+        onDragStart={handleDragStart}
+        role="presentation"
+        alt="tret"
+        height={180}
+        width={180}
+      />
+    </div>,
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-around",
+        paddingTop: 80,
+        paddingBottom: 20,
+        paddingRight: 40,
+        paddingLeft: 20,
+      }}
+    >
+      <img
+        src={Youtube}
+        onDragStart={handleDragStart}
+        role="presentation"
+        alt="dvd"
+        height={180}
+        width={180}
+      />{" "}
+      <img
+        src={Nike}
+        onDragStart={handleDragStart}
+        role="presentation"
+        alt="dvd"
+        height={180}
+        width={180}
+      />
+    </div>,
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-around",
+        paddingTop: 80,
+        paddingBottom: 20,
+        paddingRight: 40,
+        paddingLeft: 0,
+      }}
+    >
+      <img
+        src={Lamborghini}
+        onDragStart={handleDragStart}
+        role="presentation"
+        alt="dvd"
+        height={180}
+        width={180}
+      />
+      <img
+        src={Hm}
+        onDragStart={handleDragStart}
+        role="presentation"
+        alt="tret"
+        height={180}
+        width={180}
+      />
+    </div>,
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-around",
+        paddingTop: 80,
+        paddingBottom: 20,
+        paddingRight: 40,
+        paddingLeft: 0,
+      }}
+    >
+      <img
+        src={Globe}
+        onDragStart={handleDragStart}
+        role="presentation"
+        alt="dvd"
+        height={180}
+        width={180}
+      />{" "}
+      <img
+        src={Tibco}
+        onDragStart={handleDragStart}
+        role="presentation"
+        alt="dvd"
+        height={180}
+        width={180}
+      />
+    </div>,
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-around",
+        paddingTop: 80,
+        paddingBottom: 20,
+        paddingRight: 40,
+        paddingLeft: 0,
+      }}
+    >
+      <img
+        src={BigBazaar}
+        onDragStart={handleDragStart}
+        role="presentation"
+        alt="dvd"
+        height={150}
+        width={150}
+      />
+      <img
+        src={BigYellow}
+        onDragStart={handleDragStart}
+        role="presentation"
+        alt="dvd"
+        height={150}
+        width={150}
+      />
+    </div>,
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-around",
+        paddingTop: 80,
+        paddingBottom: 20,
+        paddingRight: 40,
+        paddingLeft: 0,
+      }}
+    >
+      <img
+        src={WaltDisney}
+        onDragStart={handleDragStart}
+        role="presentation"
+        alt="tret"
+        height={150}
+        width={150}
+      />
+      <img
+        src={FedEx}
+        onDragStart={handleDragStart}
+        role="presentation"
+        alt="dvd"
+        height={150}
+        width={150}
+      />
+    </div>,
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-around",
+        paddingTop: 80,
+        paddingBottom: 20,
+        paddingRight: 40,
+        paddingLeft: 0,
+      }}
+    >
+      {" "}
+      <img
+        src={Cococola}
+        onDragStart={handleDragStart}
+        role="presentation"
+        alt="dvd"
+        height={180}
+        width={180}
+      />
+      <img
+        src={Vale}
+        onDragStart={handleDragStart}
+        role="presentation"
+        alt="dvd"
+        height={150}
+        width={150}
+      />
+    </div>,
+  ];
   return (
     <div>
       <div
@@ -198,7 +397,7 @@ function BrandCrousel() {
       <div>
         <AliceCarousel
           mouseTracking={false}
-          items={items}
+          items={isTabletOrMobile ? mobile_items : items}
           disableButtonsControls
           infinite
           disableDotsControls
@@ -221,7 +420,7 @@ function BrandCrousel() {
       </div>
       <AliceCarousel
         mouseTracking
-        items={items}
+        items={isTabletOrMobile ? mobile_items : items}
         autoPlay
         infinite
         disableButtonsControls

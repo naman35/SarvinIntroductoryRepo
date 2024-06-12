@@ -89,6 +89,7 @@ function MainDashboard({
               isTabletOrMobile={isTabletOrMobile}
             />{" "}
             <ApplynEarn isTabletOrMobile={isTabletOrMobile} />
+            <BrandCrousel isTabletOrMobile={isTabletOrMobile} />
             <Testimonials />
           </div>
         )}
