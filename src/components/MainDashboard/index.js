@@ -88,6 +88,7 @@ function MainDashboard({
               setOpenModal={setOpenModal}
               isTabletOrMobile={isTabletOrMobile}
             />{" "}
+            <ApplynEarn isTabletOrMobile={isTabletOrMobile} />
             <Testimonials />
           </div>
         )}

@@ -7,7 +7,7 @@ import CreaterCard from "../commons/CreaterCard/CreaterCard.js";
 
 import GiftCard from "../commons/GiftCard/index.js";
 import "./style.css";
-function ApplynEarn() {
+function ApplynEarn({ isTabletOrMobile = false }) {
   return (
     <>
       <div className="bg-vid">
@@ -60,13 +60,13 @@ function ApplynEarn() {
       <div
         style={{
           display: "flex",
+          flexDirection: isTabletOrMobile ? "column" : "row",
           justifyContent: "center",
           gap: 40,
-
           marginBottom: "20px",
         }}
       >
-        <div class="mt-16">
+        <div class={isTabletOrMobile ? "mt-8 mx-8" : "mt-16"}>
           <CreaterCard
             name="Loreal Paris color"
             type="Loreal Styling & Salon"
@@ -92,10 +92,21 @@ function ApplynEarn() {
             </div>
           </div>
         </div>
-        <div class="flex-col justify-center w-20 mt-48">
+        <div
+          class={
+            isTabletOrMobile
+              ? "flex justify-center w-full mt-10"
+              : "flex-col justify-center w-20 mt-48"
+          }
+        >
           <img
             alt="alternate"
-            src="https://pngbong.com/wp-content/uploads/2023/03/Arrow-PNG-Image.png"
+            src={
+              isTabletOrMobile
+                ? "https://cdn-icons-png.flaticon.com/512/59/59690.png"
+                : "https://pngbong.com/wp-content/uploads/2023/03/Arrow-PNG-Image.png"
+            }
+            width={80}
           />
         </div>
         <div class=" flex-col justify-center w-96">
@@ -118,10 +129,21 @@ function ApplynEarn() {
             </div>
           </div>
         </div>
-        <div class="flex-col justify-center w-20 mt-48">
+        <div
+          class={
+            isTabletOrMobile
+              ? "flex justify-center w-full mt-10"
+              : "flex-col justify-center w-20 mt-48"
+          }
+        >
           <img
             alt="alternate"
-            src="https://pngbong.com/wp-content/uploads/2023/03/Arrow-PNG-Image.png"
+            src={
+              isTabletOrMobile
+                ? "https://cdn-icons-png.flaticon.com/512/59/59690.png"
+                : "https://pngbong.com/wp-content/uploads/2023/03/Arrow-PNG-Image.png"
+            }
+            width={80}
           />
         </div>
         <div>
