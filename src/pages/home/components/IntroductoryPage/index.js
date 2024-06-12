@@ -9,8 +9,14 @@ function IntroductoryPage({
   openModal,
   setOpenModal = () => {},
 }) {
+  // important change
   return (
-    <>
+    <div
+      style={{
+        width: isTabletOrMobile && "100vw",
+        height: isTabletOrMobile && "100vh",
+      }}
+    >
       <div
         style={{
           display: "flex",
@@ -49,7 +55,7 @@ function IntroductoryPage({
             unoptimized
             style={{
               marginLeft: isTabletOrMobile ? "0rem" : "10rem",
-              marginBottom: "2rem",
+              marginBottom: "1.5rem",
             }}
           />
           <img
@@ -59,7 +65,7 @@ function IntroductoryPage({
             unoptimized
             style={{
               marginLeft: isTabletOrMobile ? "0rem" : "10rem",
-              marginBottom: "2rem",
+              marginBottom: "1rem",
             }}
           />
           <img
@@ -69,7 +75,7 @@ function IntroductoryPage({
             unoptimized
             style={{
               marginLeft: isTabletOrMobile ? "0rem" : "10rem",
-              marginBottom: "2rem",
+              marginBottom: "1rem",
             }}
           />
         </div>
@@ -200,7 +206,7 @@ function IntroductoryPage({
           />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

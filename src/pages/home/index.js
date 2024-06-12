@@ -21,9 +21,14 @@ export const HomePage = ({
         openModal={openModal}
         setOpenModal={setOpenModal}
       />
-      {/* <MainDashboard openModal={openModal} setOpenModal={setOpenModal} /> */}
 
-      {/* <FooterSection /> */}
+      <MainDashboard
+        openModal={openModal}
+        setOpenModal={setOpenModal}
+        isTabletOrMobile={isTabletOrMobile}
+      />
+
+      <FooterSection />
     </>
   );
 };

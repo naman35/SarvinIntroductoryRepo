@@ -12,9 +12,12 @@ import SlideCards from "./SlideCards/index.js";
 import ApplynEarn from "./ApplynEarn/index.js";
 import Statistics from "./Statistics/index.js";
 import { JumbotronSection } from "../../pages/home/components/jumbotron-section.jsx";
-import MediaQuery from "react-responsive";
 
-function MainDashboard({ openModal, setOpenModal = () => {}, currentColor }) {
+function MainDashboard({
+  openModal,
+  setOpenModal = () => {},
+  isTabletOrMobile = false,
+}) {
   return (
     <div>
       <div
@@ -35,47 +38,59 @@ function MainDashboard({ openModal, setOpenModal = () => {}, currentColor }) {
         </div>
       </div>
       <div style={{ opacity: 1, zIndex: 100000000000000000 }}>
-        <ParallaxProvider>
-          <div style={styles}>
-            <MediaQuery query="(min-width: 1024px)">
+        {!isTabletOrMobile ? (
+          <ParallaxProvider>
+            <div style={styles}>
               <HorizontalScroller />
-            </MediaQuery>
-            <FeatureSection openModal={openModal} setOpenModal={setOpenModal} />
-            <Parallax speed={60} translateX={(10, 10)}>
-              <ApplynEarn />
-            </Parallax>
-            <Parallax speed={70} translateX={(0, 10)}>
-              {" "}
-              <BrandCrousel currentColor={currentColor} />
-            </Parallax>
-            <Parallax speed={70} translateY={(0, 22)}>
-              <Testimonials currentColor={currentColor} />
-            </Parallax>
-            <Parallax speed={90} translateY={(10, 30)}>
-              <SlideCards />
-            </Parallax>
-            <br /> <br /> <br /> <br /> <br />
-            <Parallax speed={70} translateY={(10, 12)}>
-              <SlideCardsInfluencer />
-            </Parallax>
-            <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-            <br /> <br /> <br /> <br /> <br /> <br />
-            <br /> <br /> <br />{" "}
-            <Parallax speed={10} translateY={(10, 22)}>
-              <Statistics />
-            </Parallax>
-            <Parallax speed={10} translateY={(10, 22)}>
-              <JumbotronSection />
-            </Parallax>
-            <Parallax speed={10} translateY={(10, 22)}>
-              {" "}
-              <AboutOurTeam currentColor={currentColor} />
-            </Parallax>
-            <br />
-          </div>
+              <FeatureSection
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+              />
+              <Parallax speed={60} translateX={(10, 10)}>
+                <ApplynEarn />
+              </Parallax>
+              <Parallax speed={70} translateX={(0, 10)}>
+                {" "}
+                <BrandCrousel />
+              </Parallax>
+              <Parallax speed={70} translateY={(0, 22)}>
+                <Testimonials />
+              </Parallax>
+              <Parallax speed={90} translateY={(10, 30)}>
+                <SlideCards />
+              </Parallax>
+              <br /> <br /> <br /> <br /> <br />
+              <Parallax speed={70} translateY={(10, 12)}>
+                <SlideCardsInfluencer />
+              </Parallax>
+              <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
+              <br /> <br /> <br /> <br /> <br /> <br />
+              <br /> <br /> <br />{" "}
+              <Parallax speed={10} translateY={(10, 22)}>
+                <Statistics />
+              </Parallax>
+              <Parallax speed={10} translateY={(10, 22)}>
+                <JumbotronSection />
+              </Parallax>
+              <Parallax speed={10} translateY={(10, 22)}>
+                {" "}
+                <AboutOurTeam />
+              </Parallax>
+              <br />
+            </div>
 
-          <ContactForm currentColor={currentColor} />
-        </ParallaxProvider>
+            <ContactForm />
+          </ParallaxProvider>
+        ) : (
+          <div class="relative">
+            <FeatureSection
+              openModal={openModal}
+              setOpenModal={setOpenModal}
+              isTabletOrMobile={isTabletOrMobile}
+            />{" "}
+            <Testimonials />
+          </div>
+        )}
       </div>
     </div>
   );
