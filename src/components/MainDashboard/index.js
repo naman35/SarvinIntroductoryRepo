@@ -100,6 +100,8 @@ function MainDashboard({
             <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
             <br /> <br /> <br />
             <Statistics />
+            <JumbotronSection />
+            <AboutOurTeam isTabletOrMobile={isTabletOrMobile} />
           </div>
         )}
       </div>

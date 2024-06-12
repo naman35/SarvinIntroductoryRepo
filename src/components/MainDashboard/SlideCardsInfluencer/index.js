@@ -18,7 +18,10 @@ function SlideCards({ isTabletOrMobile = false }) {
       >
         Influencers Too..
       </div>
-      <div class="container">
+      <div
+        class="container"
+        style={{ width: isTabletOrMobile ? "80%" : "100%" }}
+      >
         <div class="words words--first">
           <span class="gap-20">
             <CreatorCard
