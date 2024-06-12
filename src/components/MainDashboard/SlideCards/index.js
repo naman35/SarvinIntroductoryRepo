@@ -2,7 +2,7 @@ import React from "react";
 import CreatorCard from "../commons/CreaterCard/CreaterCard.js";
 import "./style.css";
 
-function SlideCards() {
+function SlideCards({ isTabletOrMobile = false }) {
   return (
     <div class="mb-24">
       {" "}
@@ -11,7 +11,7 @@ function SlideCards() {
           display: "flex",
           justifyContent: "center",
           color: "#be4b47",
-          fontSize: "48px",
+          fontSize: isTabletOrMobile ? 32 : "48px",
           fontWeight: 400,
           margin: "60px 0 30px 0",
         }}

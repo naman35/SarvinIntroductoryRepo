@@ -91,6 +91,15 @@ function MainDashboard({
             <ApplynEarn isTabletOrMobile={isTabletOrMobile} />
             <BrandCrousel isTabletOrMobile={isTabletOrMobile} />
             <Testimonials />
+            <SlideCards isTabletOrMobile={isTabletOrMobile} />
+            <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
+            <br /> <br />
+            <div class="mb-40">
+              <SlideCardsInfluencer isTabletOrMobile={isTabletOrMobile} />
+            </div>
+            <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
+            <br /> <br /> <br />
+            <Statistics />
           </div>
         )}
       </div>
