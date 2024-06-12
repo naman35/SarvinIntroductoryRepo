@@ -102,6 +102,7 @@ function MainDashboard({
             <Statistics />
             <JumbotronSection />
             <AboutOurTeam isTabletOrMobile={isTabletOrMobile} />
+            <ContactForm isTabletOrMobile={isTabletOrMobile} />
           </div>
         )}
       </div>

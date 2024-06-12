@@ -10,7 +10,7 @@ import Be from "../commons/commonsvg/be.png";
 import { Button } from "../commons/button.tsx";
 import styles from "./styles.module.css";
 
-function ContactForm() {
+function ContactForm({ isTabletOrMobile = false }) {
   const [latitude, setLatitude] = useState();
   const [longitude, setLongitude] = useState();
   const [responseText, setResponseText] = useState({});
@@ -78,7 +78,13 @@ function ContactForm() {
           Got questions about the Landing Page UI Kit? Our team is here to help.
           Contact us for quick and friendly support.
         </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: isTabletOrMobile ? "column-reverse" : "row",
+            justifyContent: "space-between",
+          }}
+        >
           <div>
             <div style={{ display: "flex", marginTop: 60 }}>
               <img src={Phonecall} alt="Phone Call" width={20} />
