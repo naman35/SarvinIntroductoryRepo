@@ -130,7 +130,7 @@ const NavbarMobileView = ({ openModal = false, setOpenModal = () => {} }) => {
                           <li>
                             <a
                               className={styles.LinkItem_link__MszSS}
-                              href="https://sarvin-dev-lse-frontend.vercel.app/"
+                              href="https://sarvin-dev-lse-frontend.vercel.app/dashboard"
                             >
                               <div
                                 className={styles.LinkItem_hasNavImage__fxeae}
