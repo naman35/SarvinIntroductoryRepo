@@ -60,7 +60,7 @@ function ContactForm({ isTabletOrMobile = false }) {
         "https://sarvindevbackend.onrender.com/api/newsletter/enroll",
         {
           email_id: email,
-          location: location,
+          location: String(location),
         }
       );
       console.log(response);

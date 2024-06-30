@@ -8,6 +8,11 @@ import { Button } from "../../MainDashboard/commons/button.tsx";
 
 const NavbarMobileView = ({ openModal = false, setOpenModal = () => {} }) => {
   const [openNavbar, setOpenNavbar] = useState(false);
+  const [openProduct, setOpenProduct] = useState(false);
+  const [openFeatures, setOpenFeatures] = useState(false);
+  const [openResources, setOpenResources] = useState(false);
+  const [openTeam, setOpenTeam] = useState(false);
+
   return (
     <React.Fragment>
       <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
@@ -94,6 +99,7 @@ const NavbarMobileView = ({ openModal = false, setOpenModal = () => {} }) => {
                     data-accordion-target="#accordion-collapse-body-1"
                     aria-expanded="true"
                     aria-controls="accordion-collapse-body-1"
+                    onClick={() => setOpenProduct(!openProduct)}
                   >
                     <span>Product</span>
                     <svg
@@ -113,6 +119,123 @@ const NavbarMobileView = ({ openModal = false, setOpenModal = () => {} }) => {
                       />
                     </svg>
                   </button>
+                  {openProduct && (
+                    <span class="flex justify-start mr-8">
+                      <span>
+                        <ul
+                          className={
+                            styles.ProductSubMenu_productSubMenu__8kJXj
+                          }
+                        >
+                          <li>
+                            <a
+                              className={styles.LinkItem_link__MszSS}
+                              href="https://sarvin-dev-lse-frontend.vercel.app/"
+                            >
+                              <div
+                                className={styles.LinkItem_hasNavImage__fxeae}
+                              >
+                                <div className={styles.LinkItem_topImg__Jn7FY}>
+                                  <span
+                                    style={{
+                                      boxSizing: "border-box",
+                                      display: "block",
+                                      overflow: "hidden",
+                                      width: 172,
+                                      height: 120,
+                                      background: "#fff",
+                                      opacity: 1,
+                                      border: 0,
+                                      margin: 0,
+                                      padding: 0,
+                                      position: "absolute",
+                                      top: 0,
+                                      left: 0,
+                                      bottom: 0,
+                                      right: 0,
+                                    }}
+                                  >
+                                    {" "}
+                                    <img
+                                      src="https://images-platform.99static.com//ZM2mGMLeyu4D7uyuTAweSj-ykqw=/0x0:1360x1360/fit-in/500x500/99designs-contests-attachments/43/43393/attachment_43393137"
+                                      alt="Find Influencers"
+                                    />
+                                  </span>
+                                </div>
+                                <div
+                                  className={
+                                    styles.LinkItem_hoverContainer__wX9bI
+                                  }
+                                >
+                                  <div
+                                    className={styles.LinkItem_btmInfo__WKcpe}
+                                  >
+                                    <img
+                                      src="https://media.graphassets.com/fOJkAw8AQXGeAmKphQYH"
+                                      alt="Find Influencers"
+                                    />
+                                    Brand Aggreagator
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className={styles.LinkItem_link__MszSS}
+                              href="/features/find-influencers"
+                            >
+                              <div
+                                className={styles.LinkItem_hasNavImage__fxeae}
+                              >
+                                <div className={styles.LinkItem_topImg__Jn7FY}>
+                                  <span
+                                    style={{
+                                      boxSizing: "border-box",
+                                      display: "block",
+                                      overflow: "hidden",
+                                      width: 184,
+                                      height: 120,
+                                      background: "none",
+                                      opacity: 1,
+                                      border: 0,
+                                      margin: 0,
+                                      padding: 0,
+                                      position: "absolute",
+                                      top: 0,
+                                      left: 0,
+                                      bottom: 0,
+                                      right: 0,
+                                    }}
+                                  >
+                                    <img
+                                      src="https://images-platform.99static.com//Pbim3yI0JmavXkPAFQa2ADpeSgg=/0x0:1690x1690/fit-in/500x500/99designs-contests-attachments/87/87215/attachment_87215454"
+                                      alt="Find Influencers"
+                                    />
+                                  </span>
+                                </div>
+                                <div
+                                  className={
+                                    styles.LinkItem_hoverContainer__wX9bI
+                                  }
+                                >
+                                  <div
+                                    className={styles.LinkItem_btmInfo__WKcpe}
+                                  >
+                                    <img
+                                      src="https://media.graphassets.com/fOJkAw8AQXGeAmKphQYH"
+                                      alt="Find Influencers"
+                                    />
+                                    Local Search Engine
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </span>
+                    </span>
+                  )}
                 </li>
                 <li>
                   <button
@@ -121,6 +244,7 @@ const NavbarMobileView = ({ openModal = false, setOpenModal = () => {} }) => {
                     data-accordion-target="#accordion-collapse-body-1"
                     aria-expanded="true"
                     aria-controls="accordion-collapse-body-1"
+                    onClick={() => setOpenFeatures(!openFeatures)}
                   >
                     <span>Features</span>
                     <svg
@@ -140,6 +264,136 @@ const NavbarMobileView = ({ openModal = false, setOpenModal = () => {} }) => {
                       />
                     </svg>
                   </button>
+                  {openFeatures && (
+                    <span class="flex justify-start ml-4">
+                      <span>
+                        <ul
+                          className={
+                            styles.SolutionSubMenu_productSubMenu__3KMh1
+                          }
+                        >
+                          <li>
+                            <span>
+                              <h3>Network</h3>
+                              <a
+                                className={styles.LinkItem_link__MszSS}
+                                href="/solutions/instagram-influencers"
+                              >
+                                <div
+                                  className={
+                                    styles.LinkItem_hoverContainer__wX9bI
+                                  }
+                                >
+                                  <span className={styles.LinkItem_text__v5efp}>
+                                    <img
+                                      src="https://media.graphassets.com/hUjF8HvFQyeQFR3B2Q6Q"
+                                      alt="Instagram"
+                                    />
+                                    Instagram
+                                  </span>
+                                </div>
+                              </a>
+                              <a
+                                className={styles.LinkItem_link__MszSS}
+                                href="/solutions/youtube-influencers"
+                              >
+                                <div
+                                  className={
+                                    styles.LinkItem_hoverContainer__wX9bI
+                                  }
+                                >
+                                  <span className={styles.LinkItem_text__v5efp}>
+                                    <img
+                                      src="https://media.graphassets.com/96nka6UNSNOyflKSIN4D"
+                                      alt="YouTube"
+                                    />
+                                    YouTube
+                                  </span>
+                                </div>
+                              </a>
+                              <a
+                                className={styles.LinkItem_link__MszSS}
+                                href="/solutions/tiktok-influencers"
+                              >
+                                <div
+                                  className={
+                                    styles.LinkItem_hoverContainer__wX9bI
+                                  }
+                                >
+                                  <span className={styles.LinkItem_text__v5efp}>
+                                    <img
+                                      src="https://media.graphassets.com/eQG9UJRuC7e4LbopRpgw"
+                                      alt="TikTok"
+                                    />
+                                    TikTok
+                                  </span>
+                                </div>
+                              </a>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="p-8">
+                              <h3>Business</h3>
+                              <a
+                                className={styles.LinkItem_link__MszSS}
+                                href="/solutions/enterprise"
+                              >
+                                <div
+                                  className={
+                                    styles.LinkItem_hoverContainer__wX9bI
+                                  }
+                                >
+                                  <span className={styles.LinkItem_text__v5efp}>
+                                    <img
+                                      src="https://media.graphassets.com/nl3YLdFMSqCDgb0gF5yu"
+                                      alt="Enterprise"
+                                    />
+                                    Enterprise
+                                  </span>
+                                </div>
+                              </a>
+                              <a
+                                className={styles.LinkItem_link__MszSS}
+                                href="/solutions/agencies"
+                              >
+                                <div
+                                  className={
+                                    styles.LinkItem_hoverContainer__wX9bI
+                                  }
+                                >
+                                  <span className={styles.LinkItem_text__v5efp}>
+                                    <img
+                                      src="https://media.graphassets.com/1dIbZDUtQoK0eYnrXfxc"
+                                      alt="Agency"
+                                    />
+                                    Agency
+                                  </span>
+                                </div>
+                              </a>
+                              <a
+                                className={styles.LinkItem_link__MszSS}
+                                href="/solutions/e-commerce"
+                              >
+                                <div
+                                  className={
+                                    styles.LinkItem_hoverContainer__wX9bI
+                                  }
+                                >
+                                  <span className={styles.LinkItem_text__v5efp}>
+                                    <img
+                                      src="https://media.graphassets.com/1dByalTaTqC2bVcuJuxd"
+                                      alt="eCommerce"
+                                    />
+                                    Market
+                                  </span>
+                                </div>
+                              </a>
+                            </span>
+                          </li>
+                        </ul>
+                      </span>
+                    </span>
+                  )}
                 </li>
                 <li>
                   <button
@@ -148,6 +402,7 @@ const NavbarMobileView = ({ openModal = false, setOpenModal = () => {} }) => {
                     data-accordion-target="#accordion-collapse-body-1"
                     aria-expanded="true"
                     aria-controls="accordion-collapse-body-1"
+                    onClick={() => setOpenResources(!openResources)}
                   >
                     <span>Resources</span>
                     <svg
@@ -167,6 +422,82 @@ const NavbarMobileView = ({ openModal = false, setOpenModal = () => {} }) => {
                       />
                     </svg>
                   </button>
+                  {openResources && (
+                    <span class="flex justify-start mr-8">
+                      {/* SubNavItems_subNavItems__rYvPL */}
+                      <ul className={styles.SubNavItems_subNavItems__rYvPL}>
+                        <li>
+                          <a
+                            className={styles.LinkItem_link__MszSS}
+                            href="/events"
+                          >
+                            <div
+                              className={styles.LinkItem_hoverContainer__wX9bI}
+                            >
+                              <span className={styles.LinkItem_text__v5efp}>
+                                <img
+                                  src="https://media.graphassets.com/iZ4bXKu0SUC3Q6cjojJm"
+                                  alt="Events"
+                                />
+                                Events
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            className={styles.LinkItem_link__MszSS}
+                            href="/case-studies"
+                          >
+                            <div
+                              className={styles.LinkItem_hoverContainer__wX9bI}
+                            >
+                              <span className={styles.LinkItem_text__v5efp}>
+                                <img
+                                  src="https://media.graphassets.com/EEtyMpmTDqBQWILkY4MQ"
+                                  alt="Case Studies"
+                                />
+                                Case Studies
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/" className={styles.LinkItem_link__MszSS}>
+                            <div
+                              className={styles.LinkItem_hoverContainer__wX9bI}
+                            >
+                              <span className={styles.LinkItem_text__v5efp}>
+                                <img
+                                  src="https://media.graphassets.com/i5ByYWdgR1CujiyMSaxK"
+                                  alt="Reports &amp; Guides"
+                                />
+                                Pricing
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            className={styles.LinkItem_link__MszSS}
+                            href="/blog"
+                          >
+                            <div
+                              className={styles.LinkItem_hoverContainer__wX9bI}
+                            >
+                              <span className={styles.LinkItem_text__v5efp}>
+                                <img
+                                  src="https://media.graphassets.com/MR91t4PQjiDwoHMh5tt4"
+                                  alt="Blog"
+                                />
+                                Blog
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </span>
+                  )}
                 </li>
                 <li>
                   <button
