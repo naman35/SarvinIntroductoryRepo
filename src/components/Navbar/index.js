@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
 import { Button } from "../MainDashboard/commons/button.tsx";
+import { LANGUAGES } from "../../constants/index.ts";
 
 function NavBar({ openModal, setOpenModal = () => {} }) {
   const [openPricingModal, setOpenPricingModal] = useState(false);
@@ -654,6 +655,13 @@ function NavBar({ openModal, setOpenModal = () => {} }) {
 
                 {/* Other Feature Links... */}
               </ul>
+              {/* <select defaultValue={"es"}>
+                {LANGUAGES.map(({ code, label }) => (
+                  <option key={code} value={code}>
+                    {label}
+                  </option>
+                ))}
+              </select> */}
               <div className={styles.Header_loginWrapper__9_1kE}>
                 {" "}
                 <Button

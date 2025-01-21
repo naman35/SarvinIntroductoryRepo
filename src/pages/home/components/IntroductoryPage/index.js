@@ -49,7 +49,7 @@ function IntroductoryPage({
           />
 
           <img
-            src="https://see.fontimg.com/api/renderfont4/z8xjG/eyJyIjoiZnMiLCJoIjoxMzAsInciOjIwMDAsImZzIjo2NSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/QSBuZXcgSm91cm5leSBBd2FpdHMgeW91/darlington-demo.png"
+            src="https://see.fontimg.com/api/rf5/0WPqo/ZTZkNjg2NTJkZTk0NDQ5NTkwMDA4MTIxZGRmOTJlY2EudHRm/WW91ciBQYXJ0bmVyIGluIEdyb3d0aCBhbmQgUmVhY2g/gracility-regular.png?r=fs&h=130&w=2000&fg=000000&bg=FFFFFF&tb=1&s=65"
             width={isTabletOrMobile ? 300 : 500}
             height={isTabletOrMobile ? 300 : 500}
             unoptimized

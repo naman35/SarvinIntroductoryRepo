@@ -66,7 +66,7 @@ function FeatureSection({
                 marginBottom: "20px",
               }}
             >
-              Connecting Brands and Creators
+              Har Brand Ki Kahaani Ab Hogi Viral!!
             </div>
             <div
               style={{
@@ -75,11 +75,13 @@ function FeatureSection({
                 fontWeight: 300,
               }}
             >
-              Lorem IpBum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s Lorem IpBum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s
+              Let's Connect you with the most suitable influencers based on your
+              campaign goals.
+              <br />
+              You can Easily create, manage, and track influencer collaborations
+              with advanced tools. <br />
+              Join us and get your first free sarvin coins. We ensure
+              cost-effective partnerships and easy "pay as you go"!
             </div>
             <div>
               <Button
@@ -147,7 +149,7 @@ function FeatureSection({
                 marginBottom: "20px",
               }}
             >
-              Searching Businesses,Creators and Services
+              Influencers Aapka Fame Ka Shortcut!
             </div>
             <div
               style={{
@@ -156,11 +158,13 @@ function FeatureSection({
                 fontWeight: 300,
               }}
             >
-              Lorem IpBum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s Lorem IpBum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s
+              -Discover brand collaboration and turn your creativity to reach
+              into consistent income streams
+              <br />
+              -Time Saving simplified process for finding and managing brand
+              partnerships in just 3 clicks
+              <br /> -Engage with brands through Sarvin’s bidding system and
+              coins-based transactions for more control and flexibility.
             </div>
             <Button
               style={{

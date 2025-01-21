@@ -34,9 +34,6 @@ export default function App() {
         .then((response) => {
           setResponseText(JSON.parse(response?.request?.responseText));
           setLoading(false);
-          setLocation(
-            String(responseText?.features?.[0]?.properties?.formatted)
-          );
         })
         .catch((error) => {
           console.error("Error fetching data:", error);
@@ -57,10 +54,10 @@ export default function App() {
   };
   const onClickNotifier = async (e) => {
     e.preventDefault();
-
+    setLocation(String(responseText?.features?.[0]?.properties?.city));
     try {
       const response = await axios.post(
-        "https://sarvindevbackend.onrender.com/api/newsletter/enroll",
+        "https://aggregator-tool-production.onrender.com/api/newsletter/enroll",
         {
           email_id: email,
           location: location,

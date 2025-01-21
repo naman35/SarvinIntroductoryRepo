@@ -31,9 +31,6 @@ function ContactForm({ isTabletOrMobile = false }) {
         .then((response) => {
           setResponseText(JSON.parse(response?.request?.responseText));
           setLoading(false);
-          setLocation(
-            String(responseText?.features?.[0]?.properties?.formatted)
-          );
         })
         .catch((error) => {
           console.error("Error fetching data:", error);
@@ -54,10 +51,10 @@ function ContactForm({ isTabletOrMobile = false }) {
   };
   const onClickNotifier = async (e) => {
     e.preventDefault();
-
+    setLocation(String(responseText?.features?.[0]?.properties?.city));
     try {
       const response = await axios.post(
-        "https://sarvindevbackend.onrender.com/api/newsletter/enroll",
+        "https://aggregator-tool-production.onrender.com/api/newsletter/enroll",
         {
           email_id: email,
           location: String(location),
@@ -75,7 +72,7 @@ function ContactForm({ isTabletOrMobile = false }) {
       <div>
         <div className={styles.Heading}>Let’s get in touch!</div>
         <div className={styles.SubHeading}>
-          Got questions about the Landing Page UI Kit? Our team is here to help.
+          Got questions about the Sarvin MarTech? Our team is here to help.
           Contact us for quick and friendly support.
         </div>
         <div

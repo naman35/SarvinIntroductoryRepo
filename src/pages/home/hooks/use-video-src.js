@@ -16,42 +16,64 @@ export const useVideoSources = () => {
       {
         mp4: lamboVideo2Mp4,
         webm: lamboVideo2Webm,
-        title: "Direct Reach to Brands to Earn from your Content",
+        title: "Connecting Influencers With Brands In a Effortless Way",
         description:
-          "Connect over 200+ regional as well as worldwide brands to grow your reach and promote their product to grow and earn from your content.",
+          "Businesses and influencers can easily discover and connect with each other through a smart matching algorithm, ensuring effective, tailored partnerships for marketing success and growth",
         specs: [
-          { title: "Power(CV)/Power(KW)", description: "814 CV / 599 kW" },
-          { title: "Max Speed", description: "355 km/h" },
-          { title: "0-100 km/h", description: "2.80 Seconds" },
+          {
+            title: "Total Influencers Joined",
+            description: "534",
+          },
+          {
+            title: "Total Brands Joined",
+            description: "126",
+          },
+          {
+            title: "Total Deals On Way",
+            description: "53",
+          },
         ],
       },
       {
         mp4: lamboVideo3Mp4,
         webm: lamboVideo3Webm,
-        title:
-          "Local/Worldwide Discovery tool for netizens to search nearby Services/Businesses.",
+        title: "Choose your Favorite Partner",
         description:
-          "Local Search Engine for all type of business and services which is ever ready to serve you. Search neighbourhood services so you can rely on.",
+          "Businesses set budgets, receive bids, and manage influencer collaborations, while influencers gain access to new monetization opportunities through exclusive deals and content partnerships",
         specs: [
-          { title: "Power(CV)/Power(KW)", description: "552.5bhp @ 8000rpm" },
-          { title: "Max Speed", description: "325 km/h" },
-          { title: "0-100 km/h", description: "3.70 Seconds" },
+          {
+            title: "Average Influencer Joined Per City",
+            description: "834",
+          },
+          {
+            title: "Average Brands Joined Per City",
+            description: "226",
+          },
+          {
+            title: "Total Deals Completed Per City",
+            description: "531",
+          },
         ],
       },
       {
         mp4: lamboVideo1Mp4,
         webm: lamboVideo1Webm,
-        title:
-          " Find the Creators which target perfect audience to grow your Business",
+        title: "Let's grow together!",
         description:
-          " Unlock over 800 content creators, celebrities and NIL athletes across 35+ content verticals on all platforms having regional as well as worldwide reach.",
+          "We ensures both influencers and brands grow by creating meaningful collaborations that help influencers to earn and expand their reach and business to boost it's brand with tailored marketing strategy.",
         specs: [
           {
-            title: "Power(CV)/Power(KW)",
-            description: "780 CV (574 kW) at 8,500 rpm",
+            title: "Average Increament of Reach of Influencers in Month",
+            description: "34+",
           },
-          { title: "Max Speed", description: "355 km/h" },
-          { title: "0-100 km/h", description: "2.80 Seconds" },
+          {
+            title: "Average Increase on Business Revenue",
+            description: "12k/Month",
+          },
+          {
+            title: "Total Ads Posted on Social Media",
+            description: "5323",
+          },
         ],
       },
     ];
