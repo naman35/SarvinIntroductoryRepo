@@ -33,7 +33,7 @@ export const FooterSection = () => {
             ></path>
           </svg>
           <div class="text-left rtl:text-right">
-            <div class="mb-1 text-xs">Download on the</div>
+            <div class="mb-1 text-xs">Download on t</div>
             <div class="-mt-1 font-sans text-sm font-semibold">
               Mac App Store
             </div>
