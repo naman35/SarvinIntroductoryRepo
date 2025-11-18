@@ -57,7 +57,7 @@ export default function App() {
     setLocation(String(responseText?.features?.[0]?.properties?.city));
     try {
       const response = await axios.post(
-        "https://aggregator-tool-production.onrender.com/api/newsletter/enroll",
+        "https://sarvindevbackend.onrender.com/api/newsletter/enroll",
         {
           email_id: email,
           location: location,
