@@ -1,1 +1,0 @@
-window.__remixManifest={"entry":{"module":"/build/entry.client-YFK636AP.js","imports":["/build/_shared/chunk-JFPR44UO.js"]},"routes":{"root":{"id":"root","path":"","module":"/build/root-OBCOLTQZ.js","hasAction":false,"hasLoader":false,"hasClientAction":false,"hasClientLoader":false,"hasErrorBoundary":false}},"version":"bdb78b95","url":"/build/manifest-BDB78B95.js"};
