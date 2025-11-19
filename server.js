@@ -1,5 +1,5 @@
 import { createRequestHandler } from "@remix-run/node"; // Adjust the import based on your Remix version
-import * as build from "./build/index.js"; // Instead of build/server/index.js
+import * as build from "@remix-run/dev/server-build";
 
 export default function handler(req, res) {
   return createRequestHandler({
