@@ -1,4 +1,3 @@
-import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -8,9 +7,9 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-export const meta: MetaFunction = () => {
-  return [{ title: "My Remix App" }];
-};
+export function meta() {
+  return [{ title: "New Remix App" }];
+}
 
 export default function Root() {
   return (
