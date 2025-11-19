@@ -41,6 +41,7 @@
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
+  "type": "module",
   "eslintConfig": {
     "extends": [
       "react-app",
