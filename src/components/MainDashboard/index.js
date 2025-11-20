@@ -56,7 +56,7 @@ function MainDashboard({
               <Parallax speed={70} translateY={(0, 22)}>
                 <Testimonials />
               </Parallax>
-              <Parallax speed={90} translateY={(10, 30)}>
+              <Parallax speed={100} translateY={(10, 50)}>
                 <SlideCards />
               </Parallax>
               <br /> <br /> <br /> <br /> <br />
@@ -89,7 +89,7 @@ function MainDashboard({
               isTabletOrMobile={isTabletOrMobile}
             />{" "}
             <ApplynEarn isTabletOrMobile={isTabletOrMobile} />
-            <BrandCrousel isTabletOrMobile={isTabletOrMobile} />
+            {/* <BrandCrousel isTabletOrMobile={isTabletOrMobile} /> */}
             <Testimonials />
             <SlideCards isTabletOrMobile={isTabletOrMobile} />
             <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}

@@ -182,6 +182,7 @@ function ContactForm({ isTabletOrMobile = false }) {
                     Submit
                   </button>
                 </div>
+                {success && <h6>We got your response successfully</h6>}
               </form>
             </div>
           </div>
