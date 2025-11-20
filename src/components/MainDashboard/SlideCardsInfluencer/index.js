@@ -37,7 +37,7 @@ function SlideCards({ isTabletOrMobile = false }) {
               category="Food"
             />
             <CreatorCard
-              name="Roli Arya"
+              name="Amrita Kumar"
               location="Civil Lines,Rampur"
               img="https://media.licdn.com/dms/image/C5603AQHjJ3aAaUBRQg/profile-displayphoto-shrink_800_800/0/1606489391891?e=2147483647&v=beta&t=Pl90BzpHHZPHXk51o56wSWGF1AF85WZmnAHkThuk-fk"
               category="Styling"

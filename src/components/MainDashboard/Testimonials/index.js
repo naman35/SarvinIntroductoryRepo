@@ -14,7 +14,13 @@ function Testimonials() {
       key: uuidv4(),
       content: (
         <MetricCard>
-          <img src={Testimonial} alt="User DP" />
+          <img
+            src="https://media.licdn.com/dms/image/C5603AQHjJ3aAaUBRQg/profile-displayphoto-shrink_800_800/0/1606489391891?e=2147483647&v=beta&t=Pl90BzpHHZPHXk51o56wSWGF1AF85WZmnAHkThuk-fk"
+            alt="User DP"
+            width={100}
+            height={50}
+            style={{ borderRadius: "50%" }}
+          />
           <div
             style={{
               color: "#2D2D2D",
@@ -63,7 +69,13 @@ function Testimonials() {
       key: uuidv4(),
       content: (
         <MetricCard>
-          <img src={Testimonial} alt="User DP" />
+          <img
+            src="https://media.licdn.com/dms/image/C5103AQHGpsMKE2Pjqg/profile-displayphoto-shrink_800_800/0/1541873857184?e=2147483647&v=beta&t=szrnbayzM1WnCEkpUJCD6S1eSoV-HGjjE1udxYjrDjg"
+            alt="User DP"
+            width={100}
+            height={50}
+            style={{ borderRadius: "50%" }}
+          />
           <div
             style={{
               color: "#2D2D2D",
@@ -72,7 +84,7 @@ function Testimonials() {
               fontWeight: 700,
             }}
           >
-            Rejnith Nair
+            Khushi Nair
           </div>
           <div
             style={{
@@ -111,7 +123,13 @@ function Testimonials() {
       key: uuidv4(),
       content: (
         <MetricCard>
-          <img src={Testimonial} alt="User DP" />
+          <img
+            src="https://media.licdn.com/dms/image/C4D03AQH6A0uZp8KVBw/profile-displayphoto-shrink_400_400/0/1662181508642?e=2147483647&v=beta&t=LrZdcOe75HQt2YdKYo_mnXYMQyNyU4CUlZf7hoTpHeg"
+            alt="User DP"
+            width={100}
+            height={50}
+            style={{ borderRadius: "50%" }}
+          />
           <div
             style={{
               color: "#2D2D2D",
@@ -120,7 +138,7 @@ function Testimonials() {
               fontWeight: 700,
             }}
           >
-            Sneha M.
+            Sneh M.
           </div>
           <div
             style={{

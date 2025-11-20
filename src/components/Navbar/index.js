@@ -42,10 +42,7 @@ function NavBar({ openModal, setOpenModal = () => {} }) {
                         className={styles.ProductSubMenu_productSubMenu__8kJXj}
                       >
                         <li>
-                          <a
-                            className={styles.LinkItem_link__MszSS}
-                            href="https://sarvin-dev-lse-frontend.vercel.app/"
-                          >
+                          <a className={styles.LinkItem_link__MszSS} href="">
                             <div className={styles.LinkItem_hasNavImage__fxeae}>
                               <div className={styles.LinkItem_topImg__Jn7FY}>
                                 <span
@@ -625,7 +622,8 @@ function NavBar({ openModal, setOpenModal = () => {} }) {
                                   src="https://media.graphassets.com/EEtyMpmTDqBQWILkY4MQ"
                                   alt="Case Studies"
                                 />
-                                Sign-up as Creator/Influencer
+                                Sign-up as Creator/Influencer(Launching Next
+                                Month)
                               </span>
                             </div>
                           </a>
@@ -643,7 +641,7 @@ function NavBar({ openModal, setOpenModal = () => {} }) {
                                   src="https://media.graphassets.com/EEtyMpmTDqBQWILkY4MQ"
                                   alt="Case Studies"
                                 />
-                                Sign-Up as Business/Brand
+                                Sign-Up as Business/Brand(Launching Next Month)
                               </span>
                             </div>
                           </a>

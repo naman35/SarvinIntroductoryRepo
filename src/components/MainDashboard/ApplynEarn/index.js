@@ -104,7 +104,7 @@ function ApplynEarn({ isTabletOrMobile = false }) {
             src={
               isTabletOrMobile
                 ? "https://cdn-icons-png.flaticon.com/512/59/59690.png"
-                : "https://pngbong.com/wp-content/uploads/2023/03/Arrow-PNG-Image.png"
+                : "https://waryhub.com/files/preview/960x960/11751434336mjwnpvcqsasnngeuk7pvay94rk1m3nyrqehegwoysq4utrijbzgg5e3dnasenh45m2urti1knna8yzphmtm9nfxnd2igmanjtrqe.png"
             }
             width={80}
           />
@@ -141,7 +141,7 @@ function ApplynEarn({ isTabletOrMobile = false }) {
             src={
               isTabletOrMobile
                 ? "https://cdn-icons-png.flaticon.com/512/59/59690.png"
-                : "https://pngbong.com/wp-content/uploads/2023/03/Arrow-PNG-Image.png"
+                : "https://waryhub.com/files/preview/960x960/11751434336mjwnpvcqsasnngeuk7pvay94rk1m3nyrqehegwoysq4utrijbzgg5e3dnasenh45m2urti1knna8yzphmtm9nfxnd2igmanjtrqe.png"
             }
             width={80}
           />
