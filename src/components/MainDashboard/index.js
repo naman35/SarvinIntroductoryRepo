@@ -49,10 +49,10 @@ function MainDashboard({
               <Parallax speed={60} translateX={(10, 10)}>
                 <ApplynEarn />
               </Parallax>
-              <Parallax speed={70} translateX={(0, 10)}>
+              {/* <Parallax speed={70} translateX={(0, 10)}>
                 {" "}
                 <BrandCrousel />
-              </Parallax>
+              </Parallax> */}
               <Parallax speed={70} translateY={(0, 22)}>
                 <Testimonials />
               </Parallax>

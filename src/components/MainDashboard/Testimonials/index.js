@@ -2,6 +2,7 @@
 import React from "react";
 import MetricCard from "../commons/3dCarousel/Card";
 import Testimonial from "../commons/commonsvg/testimonial.svg";
+
 import Star from "../commons/commonsvg/Star.svg";
 import EmptyStar from "../commons/commonsvg/EmptyStar.svg";
 import Carroussel from "../commons/3dCarousel/Carousel";
@@ -22,7 +23,7 @@ function Testimonials() {
               fontWeight: 700,
             }}
           >
-            Sarah K.
+            Amrita K.
           </div>
           <div
             style={{
@@ -31,7 +32,7 @@ function Testimonials() {
               fontWeight: 400,
             }}
           >
-            UX Designer @Brello
+            Business Owner @Jaipur
           </div>
           <div
             style={{
@@ -42,10 +43,11 @@ function Testimonials() {
               marginTop: "30px",
             }}
           >
-            "I was looking for a way to streamline my design process and the
-            Anima’s Landing Page UI Kit was a lifesaver! The intuitive design
-            and ease of customisation have saved me hours of time and effort.
-            Highly recommend!"
+            “I run a small fashion boutique in Jaipur with limited marketing
+            budget. Through Sarvin, I connected with a micro-influencer who had
+            only 12K followers but was super engaged in our region. She posted a
+            try-on Reel of our festive collection, and within a week, footfall
+            in my store went up by 20%, and we nearly sold out of the new line!”
           </div>
           <div style={{ display: "flex", marginTop: "30px" }}>
             <img src={Star} alt="Ratings" />
@@ -70,7 +72,7 @@ function Testimonials() {
               fontWeight: 700,
             }}
           >
-            Sarah K.
+            Rejnith Nair
           </div>
           <div
             style={{
@@ -79,7 +81,7 @@ function Testimonials() {
               fontWeight: 400,
             }}
           >
-            UX Designer @Brello
+            Entrepreneur @Bengaluru
           </div>
           <div
             style={{
@@ -90,10 +92,10 @@ function Testimonials() {
               marginTop: "30px",
             }}
           >
-            "I was looking for a way to streamline my design process and the
-            Anima’s Landing Page UI Kit was a lifesaver! The intuitive design
-            and ease of customisation have saved me hours of time and effort.
-            Highly recommend!"
+            "Our millet-based snack startup in Bengaluru wanted real customers
+            but couldn’t afford big ads. We teamed up with a local fitness coach
+            via Sarvin, who shared recipes using our snacks. The authenticity
+            resonated — in 2 months, our monthly sales doubled!""
           </div>
           <div style={{ display: "flex", marginTop: "30px" }}>
             <img src={Star} alt="Ratings" />
@@ -118,7 +120,7 @@ function Testimonials() {
               fontWeight: 700,
             }}
           >
-            Sarah K.
+            Sneha M.
           </div>
           <div
             style={{
@@ -127,7 +129,7 @@ function Testimonials() {
               fontWeight: 400,
             }}
           >
-            UX Designer @Brello
+            Founder @Uttar Pradesh
           </div>
           <div
             style={{
@@ -138,16 +140,17 @@ function Testimonials() {
               marginTop: "30px",
             }}
           >
-            "I was looking for a way to streamline my design process and the
-            Anima’s Landing Page UI Kit was a lifesaver! The intuitive design
-            and ease of customisation have saved me hours of time and effort.
-            Highly recommend!"
+            “Running a green-cleaning products brand, we worried about looking
+            too ‘corporate’. Using Sarvin, we worked with micro-creators
+            passionate about sustainability. They made real home-cleaning videos
+            using our products. As a result, our conversions improved, and the
+            cost-per-acquisition was way lower than traditional ads.”
           </div>
           <div style={{ display: "flex", marginTop: "30px" }}>
             <img src={Star} alt="Ratings" />
             <img src={Star} alt="Ratings" />
             <img src={Star} alt="Ratings" />
-            <img src={EmptyStar} alt="Ratings" />
+            <img src={Star} alt="Ratings" />
             <img src={EmptyStar} alt="Ratings" />
           </div>
         </MetricCard>
