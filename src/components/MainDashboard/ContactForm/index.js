@@ -179,7 +179,7 @@ function ContactForm({ isTabletOrMobile = false }) {
                     type="submit"
                     class="flex justify-center mb-1 rounded-md bg-[#F27430] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
-                    Submit
+                    Submit--(Click 2 times to Confirm)
                   </button>
                 </div>
                 {success && <h6>We got your response successfully</h6>}

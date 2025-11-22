@@ -233,7 +233,7 @@ export default function App() {
                         type="submit"
                         class="flex w-full justify-center mb-1 rounded-md bg-[#F27430] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                       >
-                        Notify Me!
+                        Notify Me! --- (Click 2 times to Confirm)
                       </button>
                       <div class="flex justify-center">
                         <button
