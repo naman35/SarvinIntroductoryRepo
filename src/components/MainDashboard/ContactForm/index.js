@@ -92,7 +92,7 @@ function ContactForm({ isTabletOrMobile = false }) {
             <div style={{ display: "flex", marginTop: 10 }}>
               <img src={EnvelopeIcon} alt="Envelope" width={20} />
               <div style={{ fontSize: 16, fontWeight: 400, margin: 10 }}>
-                sarvin.creators@gmail.com
+                sarvincreators@gmail.com
               </div>
             </div>
             <div style={{ marginTop: 20 }}>
